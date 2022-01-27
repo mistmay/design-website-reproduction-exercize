@@ -1,0 +1,316 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 48px;
+    color: #f44336;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f44336;
+    color: white;
+    padding: 95px 30px;
+    gap: 95px;
+    font-weight: bold;
+}
+
+aside a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+aside a:hover {
+    color: black;
+    background-color: white;
+}
+
+main,
+footer {
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+}
+
+main {
+    padding: 100px 60px 0 60px;
+}
+
+main>section {
+    margin-bottom: 85px;
+}
+
+.red-line {
+    background-color: red;
+    width: 60px;
+    height: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#grid-container {
+    height: 140vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+    grid-template-areas:
+        "img-1 img-2"
+        "img-3 img-4"
+        "img-5 img-6";
+}
+
+#img-1 {
+    grid-area: img-1;
+    background-image: url("https://www.w3schools.com/w3images/kitchenconcrete.jpg");
+}
+
+#img-2 {
+    grid-area: img-2;
+    background-image: url("https://www.w3schools.com/w3images/atrium.jpg");
+}
+
+#img-3 {
+    grid-area: img-3;
+    background-image: url("https://www.w3schools.com/w3images/livingroom.jpg");
+}
+
+#img-4 {
+    grid-area: img-4;
+    background-image: url("https://www.w3schools.com/w3images/bedroom.jpg");
+}
+
+#img-5 {
+    grid-area: img-5;
+    background-image: url("https://www.w3schools.com/w3images/diningroom.jpg");
+}
+
+#img-6 {
+    grid-area: img-6;
+    background-image: url("https://www.w3schools.com/w3images/livingroom2.jpg");
+}
+
+.grid-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.grid-img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.card {
+    width: 30%;
+    background-color: rgba(241, 241, 241, 255);
+}
+
+.card-img {
+    height: 65%;
+}
+
+.card-img>img {
+    height: 100%;
+    opacity: 0.8;
+}
+
+.card-text {
+    height: 35%;
+    padding: 20px;
+    gap: 30px;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.role {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.table {
+    width: 49%;
+}
+
+.border {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+    padding: 32px 16px;
+    color: white;
+    font-size: 24px;
+}
+
+#basic {
+    background-color: rgba(97, 97, 97, 255);
+}
+
+#pro {
+    background-color: rgba(244, 67, 54, 255);
+}
+
+.table-content {
+    padding: 16px;
+    background-color: rgba(241, 241, 241, 255);
+    font-size: 16px;
+}
+
+.table-price {
+    gap: 25px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.room {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.table-button {
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+#basic-button {
+    background-color: white;
+}
+
+#pro-button {
+    color: white;
+    background-color: rgba(244, 67, 54, 255);
+}
+
+.table-button:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+form {
+    gap: 20px;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+button {
+    color: white;
+    background-color: #f44336;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+}
+
+button:hover {
+    color: black;
+    background-color: rgba(204, 204, 204, 255);
+}
+
+footer {
+    padding: 60px;
+    background-color: rgba(241, 241, 241, 255);
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    aside {
+        display: none !important;
+    }
+
+    main,
+    footer {
+        margin: 0;
+        width: 100%;
+    }
+
+    main {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 750px) {
+
+    p,
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .red-line {
+        margin: 20px auto;
+    }
+
+    #grid-container {
+        height: auto;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .grid-img {
+        width: 72vw;
+        height: 40.74vh;
+    }
+
+    #card-container,
+    #table-container {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        gap: 10px;
+    }
+
+    .card,
+    .table {
+        width: 100%;
+    }
+}
